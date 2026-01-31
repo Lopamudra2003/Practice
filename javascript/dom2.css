@@ -1,0 +1,7 @@
+#box{
+    height:200px;
+    width:100px;
+    background-color: aqua;
+    color: rgb(16, 9, 40);
+    border:1px solid black;
+}

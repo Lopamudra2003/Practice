@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melo Feedback</title>
+    <link rel="stylesheet" href="pro1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Melo Feedback</h1>
+        
+        <!-- Hidden iframe to prevent redirect -->
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+        
+        <form id="feedbackForm" action="https://docs.google.com/forms/d/e/1FAIpQLSef6JUQSgtGoDzE7YaJU80Pny3LScIAML1oWgFzgQ2xqW9gig/formResponse" method="POST" target="hidden_iframe">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="entry.2116874465" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="entry.1863440362" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="feedback">Feedback</label>
+                <textarea id="feedback" name="entry.1315371465" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+        
+        <div id="successMessage" class="success-message">
+            ✓ Thank you! Your feedback has been sent to Melo.
+        </div>
+    </div>
+    
+    <script src="pro1.js"></script>
+</body>
+</html>
