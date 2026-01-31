@@ -1,6 +1,13 @@
 /* ===============================
    THEME VARIABLES
 ================================ */
+
+
+.logo {
+    width: 120px;
+    height: auto;
+    
+} 
 :root {
     /* --- PRIMARY ACCENT --- */
     --primary: #38BDF8;        /* Electric Blue */
