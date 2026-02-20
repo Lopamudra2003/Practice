@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MELO Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎬 MELO Movies</h1>
+</header>
+
+<!-- Home Section -->
+<section class="home">
+    <div class="movie-card">
+        <img src="https://via.placeholder.com/200x250" alt="Movie Poster">
+        <h3>Avengers</h3>
+        <p>Rating: ⭐ 4.5</p>
+        <p>Language: English</p>
+        <button onclick="openBooking()">Book Now</button>
+    </div>
+</section>
+
+<!-- Booking Section -->
+<section class="booking" id="bookingSection">
+
+    <h2>Select Show Details</h2>
+
+    <div class="selectors">
+        <select id="city">
+            <option>City</option>
+            <option>Mumbai</option>
+            <option>Delhi</option>
+        </select>
+
+        <input type="date" id="date">
+
+        <select id="time">
+            <option>Time</option>
+            <option>10:00 AM</option>
+            <option>2:00 PM</option>
+            <option>6:00 PM</option>
+        </select>
+    </div>
+
+    <h2>Select Seats (Max 6)</h2>
+    <div class="seats" id="seatContainer"></div>
+
+    <div class="summary">
+        <p>Selected Seats: <span id="selectedSeats">0</span></p>
+        <p>Ticket Price: ₹150</p>
+        <p>Convenience Fee: ₹30</p>
+        <p>Total: ₹<span id="total">0</span></p>
+        <button onclick="confirmBooking()">Confirm Booking</button>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 15px;
+}
+
+.home {
+    padding: 20px;
+}
+
+.movie-card {
+    background: white;
+    width: 250px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking {
+    display: none;
+    padding: 20px;
+}
+
+.selectors {
+    margin-bottom: 20px;
+}
+
+.seats {
+    display: grid;
+    grid-template-columns: repeat(10, 35px);
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.seat {
+    width: 35px;
+    height: 35px;
+    background: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background: yellow;
+}
+
+.seat.booked {
+    background: red;
+    cursor: not-allowed;
+}
+
+.summary {
+    background: white;
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+/* Responsive */
+@media(max-width:600px){
+    .seats{
+        grid-template-columns: repeat(5, 35px);
+    }
+}
